@@ -7,8 +7,8 @@ from sklearn.linear_model import LogisticRegression #Para construir o modelo de 
 from sklearn.metrics import classification_report, roc_auc_score #para avaliar o desempenho do modelo
 
 # Passo 2: Carregar os dados de treino e teste
-train_data = pd.read_csv('/train.csv') #Não esqueça de colocar o endereçamento certo do arquivo
-test_data = pd.read_csv('/test.csv')#Não esqueça de colocar o endereçamento certo do arquivo
+train_data = pd.read_csv('/train.csv') #Não esqueça de colocar o endereçamento certo do arquivo, tem o link no README.md
+test_data = pd.read_csv('/test.csv')#Não esqueça de colocar o endereçamento certo do arquivo, tem o link no README.md
 
 # Passo 3: Separar os dados! Separar Features (X) e Target(y)
 X = train_data.drop(['target'], axis=1)
